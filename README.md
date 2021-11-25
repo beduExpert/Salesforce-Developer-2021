@@ -2,7 +2,7 @@
 
 ## :wave: Bienvenid@s
 
-En este espacio se encontrarán las actividades a desempeñar en el módulo, con el propósito de poner en práctica los conocimientos y desempeñarlos de la mejor manera posible. Todas las dudas pueden hacerse saber al experto y este apoyará a resolverlas. Sigue las indicaciones para lograr el objetivo de cada sesión.
+En este espacio se encontrarán algunas actividades a desempeñar en el módulo, con el propósito de poner en práctica los conocimientos y desempeñarlos de la mejor manera posible. Todas las dudas pueden hacerse saber al experto y este apoyará a resolverlas. Sigue las indicaciones para lograr el objetivo de cada sesión.
 
 ## :dart: Objetivo
 
