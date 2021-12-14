@@ -1,18 +1,74 @@
 
-# Sesión #: Nombre del ejercecio
+# Sesión 05: Procesos encolados con Apex
 
 ## :dart: Objetivos
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
+- Aprender a construir un proceso encolado en Apex
+- Conocer cómo implementar la interfaz Queueable
+- Identificar las diferencias entre Queueable y Feature
 
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+## ⚙ Desarrollo
 
-## ⚙ Requisitos
+Construye la siguiente clase:
 
-+ Agregar los requisitos de la sesión 
-+ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
+```
+public class AccountQueueableExample implements Queueable {
+    public List<Account> accList ; 
+    public AccountQueueableExample(List<Account> accList){
+        this.accList = accList ;  
+    }
+    public void execute(QueueableContext context) {
+        for(Account acc :accList){
+            // Update the Account Name 
+            acc.Name = acc.Name + 'Bedu';
+        }
+        update accList;
+    }
+}
+```
+  
+Y su clase de prueba
+
+```
+@isTest
+public class AccountQueueableExampleTest {
+    @testSetup
+    static void setup() {
+        List<Account> accounts = new List<Account>();
+        // add 100 accounts
+        for (Integer i = 0; i < 100; i++) {
+            accounts.add(new Account(
+                name='Test Account'+i
+            ));
+        }
+        insert accounts;
+    }
+     
+    static testmethod void testQueueable() {
+        // query for test data to pass to queueable class
+        List<Account> accounts = [select id, name from account where name like 'Test Account%'];
+        // Create our Queueable instance
+        AccountQueueableExample accQObj = new AccountQueueableExample(accounts);
+        // startTest/stopTest block to force async processes to run
+        Test.startTest();        
+        System.enqueueJob(accQObj);
+        Test.stopTest();        
+        // Validate the job ran
+        System.assertEquals(100, [select count() from account where Name like = '%Bedu%']);
+    }
+     
+}
+```
+
+Prueba el job ejecutando el siguiente codigo
+```
+List<Account> accList = [Select Id , Name from Account WHERE [Condition] ];
+ID jobID = System.enqueueJob(new AccountQueueableExample(accList));
+System.debug('jobID'+jobID);
+```
+
+
+
 
 
 
