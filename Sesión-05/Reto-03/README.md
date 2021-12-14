@@ -1,19 +1,15 @@
 
-# Sesión #: Nombre del reto
+# Sesión 05: Nombre del reto
 
 ## :dart: Objetivos
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
+- Aprender a construir un proceso encolado en Apex
+- Conocer cómo implementar la interfaz Queueable
+- Identificar las diferencias entre Queueable y Feature
 
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+## ⚙ Desarrollo
 
-## ⚙ Requisitos
-
-+ Agregar los requisitos de la sesión 
-+ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
-
+Repita el ejercicio anterior modificando el campo del objeto de cuenta a actualizar.
 
 
 
