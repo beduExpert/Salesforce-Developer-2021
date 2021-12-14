@@ -1,19 +1,45 @@
 
-# Sesión #: Nombre del reto
+# Sesión 07: Reto 02
 
 ## :dart: Objetivos
 
-Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
+- Aprender a escribir pruebas unitarias para Triggers y Controladores
+- Conocer las mejores practicas al escribir pruebas unitarias para Triggers y Controladores
+- Aprender a usar la clase Limit para verificar si las pruebas sobrepasan los governor limit
 
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
+## ⚙ Desarrollo
+Escribir la clase de prueba para el siguiente Trigger
 
-## ⚙ Requisitos
+<strong>Trigger</strong>
 
-+ Agregar los requisitos de la sesión 
-+ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
+```
+trigger accountprefix on Account(before insert)
+{
+//for every new account
+ for(Account a : Trigger.New)
+ {
+//append 'Mr.' with every account name 
+  a.Name = 'Mr.' + a.Name;
+ }
+}
+```
 
+<strong>Clase de Prueba</strong>
 
+```
+@isTest //Annotation of test class
+public class AccountInsert
+{
+//define testmethod 
+ public static testmethod void testinsert()
+ {
+//Create new account instance and pass your name as string input 
+  Account a = new Account(name = 'SalesforceKid');
+//Append Mr. with the account name
+  a.name = 'Mr.' + a.name;
+  insert a;
+  }
+} 
+```
 
 
