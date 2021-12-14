@@ -26,6 +26,16 @@ Modificar el Trigger para que tenga la siguiente sintaxis
 ![image](https://user-images.githubusercontent.com/523243/145734375-a49496db-3bb5-4587-98ce-f7b30016390b.png)
 
 
+<strong>Trigger</strong>
 
+```
+trigger myAccTriggerUpdate on Account (before insert, before update) {
+	for(Account acc : trigger.new){
+        if(acc.Website == null || acc.Website == '' ){
+            acc.adderror('La cuenta '+acc.AccountNumber+' no tiene sitio Web. Favor de capturarlo.' );
+        }
+	}
+}
+```
 
 
