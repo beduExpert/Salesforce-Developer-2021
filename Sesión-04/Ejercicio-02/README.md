@@ -1,5 +1,5 @@
 
-# Sesión 04: Contruir un Trigger
+# Sesión 04: Construir un Trigger
 
 ## :dart: Objetivos
 
