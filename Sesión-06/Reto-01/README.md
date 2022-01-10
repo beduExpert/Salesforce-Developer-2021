@@ -1,16 +1,18 @@
 
-# Sesión 06: Reto 01
+# Sesión #: Nombre del reto
 
 ## :dart: Objetivos
 
-- Conocer el concepto Modelo, Vista, Controlador
-- Crear tu primera pagina Visualforce
-- Crear una cuenta asociada con un Prospecto desde una pagina Custom
+Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
 
-## ⚙ Desarrollo
+- Objetivo 1
+- Objetivo 2
+- Objetivo 3
 
-Usando como base el ejercicio anterior, intenta agregar más campos (dos o tres más) 
-para colocarlos en la página de Visualforce y asignarlos a los campos en el objeto Cuenta.
+## ⚙ Requisitos
+
++ Agregar los requisitos de la sesión 
++ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
 
 
 

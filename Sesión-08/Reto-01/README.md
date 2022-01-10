@@ -1,15 +1,18 @@
 
-# Sesión 08: Crea tu primer Servicio SOAP
+# Sesión #: Nombre del reto
 
 ## :dart: Objetivos
 
-- Saber crear, publicar y probar un servicio SOAP.
-- Configurar Salesforce para generar un servicio SOAP.
+Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
 
-## ⚙ Desarrollo
+- Objetivo 1
+- Objetivo 2
+- Objetivo 3
 
-Usando como base el ejercicio anterior, cree una clase similar y use atributos distintos a los usados en el anterior ejercicio.
+## ⚙ Requisitos
 
++ Agregar los requisitos de la sesión 
++ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
 
 
 

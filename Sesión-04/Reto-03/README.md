@@ -1,15 +1,18 @@
 
-# Sesión 04: Crear tu primer Marco para Triggers
+# Sesión #: Nombre del reto
 
 ## :dart: Objetivos
 
-- Escribir desencadenadores eficientes, incluso en operaciones masivas, usando operaciones SOQL y DML eficientes.
-- Aprender a evitar que el diseño de un Trigger supere los Governor Limits
+Agregar los objetivos de las sesión (Mínimo poner tres objetivos y Borrar está linea una vez se hay leido )
 
-## ⚙ Desarrollo
+- Objetivo 1
+- Objetivo 2
+- Objetivo 3
 
-Construye un Trigger framewrk para el objeto Cuenta (Account) usando una clase virtual.
+## ⚙ Requisitos
 
++ Agregar los requisitos de la sesión 
++ Agregar el link de descarga en caso de ser necesario para la sesión (Borrar estás lineas una vez se hayan leido)
 
 
 
